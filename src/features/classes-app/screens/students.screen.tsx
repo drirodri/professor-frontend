@@ -49,7 +49,7 @@ export const StudentsScreen: React.FC = () => {
                     {student.name}
                   </Typography>
                   <Typography color="textSecondary">
-                    ID: {student.id}
+                    RA: {student.id}
                   </Typography>
                   <Typography color="textSecondary">
                     Status: {student.status}

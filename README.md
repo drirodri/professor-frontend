@@ -1,5 +1,7 @@
 # professor-frontend
 
+![alt text](image-1.png)
+
 # Configure o ambiente de desenvolvimento
 
 ## VsCode

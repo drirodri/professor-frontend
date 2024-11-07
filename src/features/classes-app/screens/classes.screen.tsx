@@ -42,16 +42,16 @@ export const ClassesScreen: React.FC = () => {
                     {classe.code}
                   </Typography>
                   <Typography color="textSecondary">
-                    CourseId: {classe.courseId}
+                    Disciplina: {classe.courseId}
                   </Typography>
                   <Typography color="textSecondary">
                     Campus: {classe.campus}
                   </Typography>
                   <Typography color="textSecondary">
-                    Period: {classe.period}
+                    Período: {classe.period}
                   </Typography>
                   <Typography color="textSecondary">
-                    modality: {classe.modality}
+                    modalidade: {classe.modality}
                   </Typography>
                   <Typography color="textSecondary">
                     Status: 
