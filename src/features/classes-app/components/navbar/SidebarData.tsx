@@ -2,7 +2,7 @@ import * as AiIcons from 'react-icons/ai';
 
 export const SidebarData = [
   {
-    title: 'Classes',
+    title: 'Turmas',
     path: '/',
     icon: <AiIcons.AiFillFile />,
     cName: 'nav-text'

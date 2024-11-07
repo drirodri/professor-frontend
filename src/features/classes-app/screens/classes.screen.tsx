@@ -15,7 +15,7 @@ export const ClassesScreen: React.FC = () => {
   return (
     <Box sx={{ padding: '90px' }}>
       <Typography variant="h4" component="h1" gutterBottom sx={{ marginBottom: '20px', marginTop: '-20px' }}>
-        Classes
+        Turmas
       </Typography>
 
       {loading && <CircularProgress sx={{ display: 'block', margin: '20px auto' }} />}

@@ -70,7 +70,7 @@
 # Executar aplicação localmente
 - Abra o terminal e garanta que você está dentro do repositório.
   - npm i
-    - Caso tenha algum problema de permissão no windows execute: Set-ExecutionPolicy RemoteSigned 
+    - Caso tenha algum problema de permissão no windows execute (como administrador): Set-ExecutionPolicy RemoteSigned 
   - npm start
 
   - Para a aplicação funcionar localmente por completo é necessário subir a aplicação de backend
