@@ -1,9 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import { listProfessorClassesByIdService } from "../../services/list-professor-classes-by-id/list-professor-classes-by-id.service";
-import { UseListProfessorClassesByIdProps, UseListProfessorClassesByIdResult } from "./use-list-professor-classes-by-id.types";
+import {
+  UseListProfessorClassesByIdProps,
+  UseListProfessorClassesByIdResult,
+} from "./use-list-professor-classes-by-id.types";
 
-export const useListProfessorClassesById = ({ professorId }: UseListProfessorClassesByIdProps) => {
-  const [result, setResult] = useState<UseListProfessorClassesByIdResult[] | null>([]);
+export const useListProfessorClassesById = ({
+  professorId,
+}: UseListProfessorClassesByIdProps) => {
+  const [result, setResult] = useState<
+    UseListProfessorClassesByIdResult[] | null
+  >([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -12,14 +19,14 @@ export const useListProfessorClassesById = ({ professorId }: UseListProfessorCla
       setLoading(true);
       try {
         const response = await listProfessorClassesByIdService({
-          urlBase: 'http://localhost:8080',
+          urlBase: "http://localhost:8080",
           professorId,
         });
 
         setResult(response);
       } catch (err) {
-        console.log(err)
-        setError(err instanceof Error ? err.message : 'Error fetching data');
+        console.log(err);
+        setError(err instanceof Error ? err.message : "Error fetching data");
       } finally {
         setLoading(false);
       }
@@ -31,4 +38,4 @@ export const useListProfessorClassesById = ({ professorId }: UseListProfessorCla
   }, [professorId]);
 
   return { result, loading, error };
-}
+};

@@ -15,5 +15,5 @@ export interface listProfessorClassesByIdServiceInput {
 export type listProfessorClassesByIdServiceResult = ApiResponseBody[];
 
 export type ListProfessorClassesByIdService = (
-  params: listProfessorClassesByIdServiceInput,
+  params: listProfessorClassesByIdServiceInput
 ) => Promise<listProfessorClassesByIdServiceResult>;
